@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after 
+{
+    box-sizing: border-box;
+}
+
+
+:root
+{
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: ;
+    
+    --fw-reg: 300;
+    --fw-bold: 900;
+    
+    --clr-bg: rgb(240, 195, 50);
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.5rem;
+    --fs-body: 1rem;
+
+
+}
+
+/* If the windows is minimized the font sizes will change */
+@media (min-width: 800px) /*Change # if needed*/
+{
+    :root
+    {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+/* General styling */
+
+body
+{
+    color: black;
+    background-color: var(--clr-bg);
+    font-family: var(--ff-primary);
+}
+/* Typography */
+
+h1,
+h2,
+h3
+{
+    line-height: 1.1;
+    margin:0;
+}
+h1{ font-size: var(--fs-h1) }
+h2{ font-size: var(--fs-h2) }
+
+/* INDEX PAGE */
+.section__title--intro
+{
+    font-size: var(--fs-h1);
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+}
+
+.section__title--TOC
+{
+    font-size: var(--fs-body);
+    text-align: center;
+}
+.tableofcontents
+{
+    border-style: solid;
+    box-sizing:border-box;
+    max-width: 300px;
+    padding: 10px 20px 10px 20px;
+    margin: auto;
+}
+
+.content
+{
+    padding: 10px 0px 10px 0px;
+}
+button
+{
+    font-size: var(--fs-body);
+    font-weight: var(--fw-bold);
+    width: 200px;
+    border-color: black;
+    display: block;
+    color:var(--clr-bg);
+    background-color:black;
+    cursor: pointer;
+    transition: 500ms;
+}
+button:hover
+{
+    background-color: var(--clr-bg);
+    color:black;
+}
+
+
+/* ABOUT PAGE */
+
+.about__image
+{
+    float: left;
+    margin: 10rem 5rem 0 15rem;
+    position: static;
+}
+
+.section__title--abouttitle
+{
+    padding: 15rem;
+}
+
+.about__body
+{
+    clear:left;
+    text-align: center;
+    padding: 15rem;
+}
+
+
+.about__socialmedia
+{
+    text-align: center;
+    margin: auto;
+    padding: 15rem;
+}
+
+/* CONTACT PAGE */
